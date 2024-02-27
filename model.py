@@ -1,8 +1,10 @@
 from flask_sqlalchemy import SQLAlchemy
+from werkzeug.security import generate_password_hash, check_password_hash
+from flask_login import UserMixin
 import barnum
 import random
 from datetime import datetime  
-from datetime import timedelta  
+from datetime import timedelta
 
 db = SQLAlchemy()
 
